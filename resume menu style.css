@@ -3,17 +3,16 @@
 }
 body{
     background-color: #1e1f26;
-    background-color: #252525;
     margin:0;
     padding:0;
     font-family: 'Poppins', sans-serif;
 }
-
 .canvas{
     display:flex;
 }
 .sidebar{
     position:fixed;
+    z-index:1;
     background-color:#333333;
     width:17%;
 }
@@ -49,8 +48,6 @@ body{
     margin:0 12%;
 }
 .mensrvc{
-    /*background-color: #2e7bda;
-    height:0.1rem;*/
     background-color:#2e7bda;
     margin:0 1rem;
     border-radius:5%;
@@ -69,40 +66,26 @@ body{
 .back{
     position:relative;
     left:16rem;
+    z-index:2;
     width:83%;
-    /*margin:0% auto 5% auto;*/
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);   
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    background-color: #252525;
+    
+}
+.headbar{
+    display:flex;
+    background-color: #444343;
+    padding:2rem;
+    margin:3rem 2rem;
+    color:white;
 }
 .desc{
-    color:white;
-    padding: 0rem 3rem;
+    padding: 2rem;
+    width:70%;
 }
-.desc h1{
-    font-size:2.5rem;
-    text-align:center;
-    color:#2e7bda;
-    position:relative;
-    line-height: 2;
-    height:6rem;
-}
-.desc h1:after{
-    background-color: #2e7bda;
-    height:0.1rem;
-    width: 40rem;
-    content:"";
-    position:absolute;
-    display:block;
-    margin:0 23%;
-}
-.frm{
-    border:0.1rem solid #2e7bda;
-    padding: 0 2rem;
-}
-.desc h2{
-    font-size:2.4rem;
-}
+
 .desc p{
-    font-size:1.3rem;
+    font-size:1.1rem;
     line-height: 1.4;
 }
 .desc button{
@@ -120,24 +103,9 @@ body{
 .desc button:active{
     transform: scale(1.1);
 }
-#subbut{
-    background-color: #2765b0;
-    color:white;
-    height:2.2rem;
-    width:7rem;
-    font-size:1.1rem;
-    padding:0.2rem;
-    border:0.01rem solid black;
-    transition: all .2s ease-in-out;
-    margin:0 32rem;
+.tempheadimg{
+    transform: rotate(-10deg);
 }
-#subbut:hover{
-    background-color: #2e7bda;
-}
-#subbut:active{
-    transform: scale(1.1);
-}
-
 .footer{
     text-align:center;
     padding:0.5rem;
@@ -157,4 +125,71 @@ body{
 }
 .ficons a:hover{
     transform: translate(0, -0.6rem);
+}
+.resumebarparts{
+    background: linear-gradient(0deg, #252525 50%, #0061a7 50%);
+    display:flex;
+    flex-wrap: wrap;
+    margin:0 0.5rem;
+}
+.resumebarpartsmob{
+    display:flex;
+    width:50%;
+}
+.templatebox{
+    background-color:white;
+    margin:5rem 1.2rem;
+    height:25rem;
+    width:17rem;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter:blur(1rem);
+    border-radius:5%;
+    border-top:0.08rem solid white;
+    border-left:0.08rem solid white;
+    text-align:center;
+    transition:transform 3s;
+    overflow:hidden;
+}
+.templatebox img{
+    margin:2.5rem 0 0.9rem 0;
+    border-radius:3%;
+    transition:transform 0.3s;
+}
+.templatebox p{
+    margin:0 0 0.6rem 0;
+    color:white;
+    font-size:1.1rem;
+    transition:transform 0.3s;
+    transform:translateY(5rem);
+}
+.templatebox button{
+    background-color:#0061a7;
+    color:white;
+    border:none;
+    border-radius:20px;
+    width:5rem;
+    padding:0.4rem;
+    font-size:0.9rem;
+    transition:transform 0.3s;
+    transform:translateY(5rem);
+}
+.templatebox a{
+    color:white;
+    text-decoration:none;
+}
+.templatebox:hover img{
+    transform:scale(0.85) translateY(-2.5rem);
+}
+.templatebox:hover p{
+    transform:translateY(-3.5rem);
+}
+.templatebox:hover button{
+    transform:translateY(-3.5rem);
+}
+.templatebox button:hover{
+    background-color: #aaa;
+}
+.templatebox button:active{
+    background-color: #0061a7;
 }
