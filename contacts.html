@@ -12,7 +12,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contacts.css">
 </head>
 <body>
     <div class="canvas">
@@ -21,9 +21,9 @@
                 <a href="index.html"><img src="images/logo.png" height="150rem" width="200rem">
             </div>
             <div class="menu">
-                <div class="menuop logohouse">
+                <div class="menuop">
                     <i class="tail-icon-style fa-solid fa-house"></i>
-                    <p><a href="#">Home</a></p>
+                    <p><a href="index.html">Home</a></p>
                 </div>
                 <div class="menuop">
                     <i class="tail-icon-style fa-solid fa-circle-user"></i>
@@ -37,21 +37,51 @@
                     <i class="tail-icon-style fa-solid fa-globe"></i>
                     <p><a href="https://sheikh-tafsir.github.io/octo-journey.github.io/">Portfolio</a></p>
                 </div>
-                <div class="menuop">
+                <div class="menuop menucont">
                     <i class="tail-icon-style fa-solid fa-message"></i>
-                    <p><a href="contacts.html">Contacts</a></p>
+                    <p><a href="#">Contacts</a></p>
                 </div>
             </div>
         </div>
         <div class="back">
-            <div class="desc">
-                <h1>DREAM MORE REALISTIC</h1>
-                <h2>MAKE YOUR RESUME SUPERIOR</h2>
-                <p>HI, I am Tafsir Md Rubaiyat Rahman a Web developer and Engineering <br>
-                    student. I am looking forward to working with you to enhance my <br>
-                    skills and gain more experience and knowledge in this field.<br>
-                    skills and gain more experience and knowledge in this field adda.</p>
-                <button>More Info</button>
+            <div class="descbar">
+                <h1 id="descbarh1">Contact Us</h1>
+                <div class="desc">
+                    <div class="conts">
+                        <div class="cont">
+                            <div class="contparts">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div class="contpairs">
+                                    <h3>Address</h3>
+                                    <p>12,Dattapara Housebuilding, College Gate, Tongi, Gazipur City Corporation</p>
+                                </div>
+                            </div>
+                            <div class="contparts">
+                                <i class="tail-icon-style fa-solid fa-phone"></i>
+                                <div class="contpairs">
+                                    <h3>Phone</h3>
+                                    <p>01817530115</p>
+                                </div>
+                            </div>
+                            <div class="contparts">
+                                <i class="tail-icon-style fa-solid fa-envelope"></i>
+                                <div class="contpairs">
+                                    <h3>Mail</h3>
+                                    <p>190041130tafsir@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mailbar">
+                        <form class="con-form" action="https://formspree.io/f/xeqnvlln" method="POST">
+                            <h1>Send Message</h1>
+                            <input type="text" id="name" placeholder="Your Name" name="Name" required>
+                            <input type="email" id="email" placeholder="Your Emaiil" name="Email" required>
+                            <textarea id="message" placeholder="Your Needs" name="needs" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="footer">
                 <div class="ficons">
@@ -70,4 +100,3 @@
 
 </body>
 </html>
-
