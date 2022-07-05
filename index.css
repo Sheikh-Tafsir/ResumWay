@@ -49,8 +49,9 @@ body{
         padding: 1rem 1.5rem 6rem 1.5rem;
     }
     .headlogo img{
-        height:7rem;
-        width:12rem;
+        height:5rem;
+        width:10rem;
+        transform: translate(-1.5rem,2rem);
     }
     .menu{
         text-align:center;
@@ -72,14 +73,27 @@ body{
 .menuop:active {
     background-color: #2e7bda;
 }
-.menuop:after{
-    background-color: grey;
-    height:0.03rem;
-    width: 9rem;
-    content:"";
-    position:absolute;
-    display:block;
-    margin:0 12%;
+@media screen and (min-width: 992px) {
+    .menuop:after{
+        background-color: grey;
+        height:0.03rem;
+        width: 9rem;
+        content:"";
+        position:absolute;
+        display:block;
+        margin:0 12%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .menuop:after{
+        background-color: grey;
+        height:0.03rem;
+        width: 6rem;
+        content:"";
+        position:absolute;
+        display:block;
+        margin:0 8%;
+    }
 }
 .menuhome{
     background-color:#2e7bda;
@@ -189,11 +203,11 @@ body{
         visibility: visible;
     }
     .centlogo img{
-        margin:1rem 0rem 0 8rem;
+        margin:2rem 4rem;
     }
     .vers{
-        font-size:2rem;
-        margin: 3rem 0rem 1rem 8rem;
+        font-size:1.5rem;
+        margin: 2.7rem 0rem 1rem 5rem;
     }
     .bars{
         color:grey;
@@ -203,8 +217,9 @@ body{
     }
     .xmark{
         color:grey;
-        transform: translate(160%,0);
-        visibility: hidden;  
+        transform: translate(20%,120%);
+        visibility: hidden;
+ 
     }
     .xmark:hover{
         color:white;
@@ -244,7 +259,9 @@ body{
         border-radius:1rem;
         height:23rem;
         width:16rem;
-        margin:0.5rem 9rem 2rem 10rem;
+        margin:auto;
+        margin-top:0.5rem;
+        margin-bottom:1rem;
         border-top:0.1rem solid white;
         border-left:0.08rem solid white;
     }
