@@ -1,8 +1,12 @@
-function inp(){
-    var name = window.prompt("Enter your name: ");
-    document.querySelector("#fname").innerHTML=name;
-    const element = document.querySelector(".back");
-    html2pdf()
-    .from(element)
-    .save();
+function settmax(){
+    var myVar=document.querySelector(".sidebar");
+    myVar.classList.add("sidebarv");
+    document.querySelector(".xmark").style.visibility = "visible";
+    document.querySelector(".bars").style.visibility = "hidden";
+}
+function settmin(){
+    var myVar=document.querySelector(".sidebar");
+    myVar.classList.remove("sidebarv");
+    document.querySelector(".xmark").style.visibility = "hidden";
+    document.querySelector(".bars").style.visibility = "visible";
 }
