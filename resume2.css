@@ -44,7 +44,6 @@ body{
     margin:0 12%;
 }
 .menutemp{
-    
     margin:0 1.5rem;
     border-radius:0.4rem;
     position:relative;
@@ -68,15 +67,19 @@ body{
     text-decoration: none;
     color:white;
 }
-
+.backk{
+    width:83%;
+    background-color: #252525;
+    position:relative;
+    left:16rem;
+    margin:0;
+    padding:0;
+}
 /*-------------------------------------cv----------------------------------*/
 .back{
     display:flex;
     width:34rem;
-    margin: auto;
-    position:relative;
-    top:1rem;
-    left:7rem;
+    margin:auto;
 }
 
 /*--------------------------------left side---------------------------------*/
@@ -85,16 +88,16 @@ body{
     width:45%;
 }
 .ylww{
-        background-color: rgb(244,214,68);
+        background-color: #372b23;
         height:12%;
 }
 .ylww img{
     z-index:-1;
 }
 .blk{
-    background-color: rgb(41,45,45);
+    background-color: #ddcbc0;
     height:88%;
-    color:white;
+    color:black;
 }
 .cont{
     padding:9rem 1.2rem 0 1.2rem;
@@ -106,21 +109,21 @@ body{
     height:1.7rem;
     line-height: 1.7rem;
     width:1.35rem;
-    color: rgb(41,45,45);
-    background-color: rgb(244,214,68);
-    border-left: 0.35rem solid rgb(244,214,68);
+    color: #ddcbc0;
+    background-color: #372b23;
+    border-left: 0.35rem solid #372b23;
     border-radius: 50%;
     margin:0.2rem 0;
 }
 .cont p{
     font-size: 0.8rem;
     display:inline;
-    color: white;
+    color:black;
     padding: 0 0.2rem;
 }
 .cont a{
     text-decoration: none;
-    color:white;
+    color:black;
 }
 .per-skil{
     font-size:0.5rem;
@@ -148,7 +151,7 @@ body{
     position:relative;
     height:0.3rem;
     width:5.5rem;
-    background-color:rgb(244,214,68);
+    background-color:#372b23;
     left:1.4rem;
     top:1.3rem;
     border-radius:20%;
@@ -171,7 +174,7 @@ body{
     position:relative;
     height:0.3rem;
     width:6rem;
-    background-color:rgb(244,214,68);
+    background-color:#372b23;
     left:1.5rem;
     top:1.3rem;
     border-radius:20%;
@@ -192,7 +195,7 @@ body{
     position:relative;
     height:0.3rem;
     width:5rem;
-    background-color:rgb(244,214,68);
+    background-color:#372b23;
     left:2.3rem;
     top:1.3rem;
     border-radius:20%;
@@ -220,8 +223,9 @@ body{
     left:-0.1rem;
 }
 .ylw{
-    background-color:rgb(244,214,68);
+    background-color: #372b23;
     height:43%;
+    color:white;
 }
 #fname{
     text-transform: capitalize;
@@ -253,7 +257,7 @@ body{
 }
 #abt p{
     font-size:0.8rem;
-    color:rgb(85, 83, 83);
+    color:whitesmoke;
 }
 .wht{
     background-color: whitesmoke;
@@ -302,7 +306,7 @@ body{
 
 .usetemp{
     width:20rem;
-    margin:0 44rem;
+    margin:0 30em;
     display:flex;
 }
 .usetemp button{

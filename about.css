@@ -2,7 +2,7 @@
     overflow: hidden;
 }
 body{
-    background-color: #1e1f26;
+    background-color: #252525;
     margin:0;
     padding:0;
     font-family: 'Poppins', sans-serif;
@@ -32,7 +32,7 @@ body{
     background-color: #aaa;
     /*background-color:#2e7bda;*/
     margin:0 1rem;
-    border-radius:0.4rem;
+    border-radius:5%;
 }
 .menuop:active {
     background-color: #2e7bda;
@@ -46,12 +46,12 @@ body{
     display:block;
     margin:0 12%;
 }
-.menuhome{
+.menuabt{
     /*background-color: #2e7bda;
     height:0.1rem;*/
     background-color:#2e7bda;
     margin:0 1rem;
-    border-radius:0.4rem;
+    border-radius:5%;
 }
 .menu i{
     color:white;
@@ -66,69 +66,56 @@ body{
 }
 .back{
     width:83%;
-    background-image: url(images/background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*margin:0% auto 5% auto;*/
     box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-    
 }
-.banner{
-    display:flex;
+.descbar{
+    background: linear-gradient(0deg, #252525 50%, #0061a7 50%);
+    margin:4rem 2rem 2rem 2rem;
+}
+#descbarh1{
+    margin:0;
+    transform:translateY(2rem);
+    color:white;
+    text-align:center;
+    font-size:2.5rem;
 }
 .desc{
+    margin:4rem 2rem;
     color:white;
-    padding: 12rem 3rem 8rem 3rem;
-    width:60%;
-}
-.desc h1{
-    font-size:3.2rem;
-}
-.desc h2{
-    font-size:2.4rem;
-}
-.desc p{
-    font-size:1.3rem;
-    line-height: 1.4;
-}
-.desc button{
-    background-color: #2765b0;
-    color:white;
-    height:2.5rem;
-    width:8rem;
-    font-size:1.1rem;
-    padding:0.3rem;
-    transition: all .2s ease-in-out;
-}
-.desc button:hover{
-    background-color: #2e7bda;
-}
-.desc button:active{
-    transform: scale(1.1);
-}
-.homeimg{
-    width:40%;
-}
-.hmimg{
+    display:flex;
     box-shadow: 0 15px 45px rgba(0,0,0,0.1);
     background: rgba(255,255,255,0.1);
     backdrop-filter:blur(1rem);
     border-radius:1rem;
-    height:30rem;
-    width:20rem;
-    margin:8rem 1rem 0 1rem;
-    border-top:0.1rem solid white;
-    border-left:0.08rem solid white;
+    height:27.15rem;
 }
-.hmimg img{
-    border-radius:0.5rem;
-    margin:3rem 1.8rem;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+.abt{
+    width:55%;
+}
+.abtbar{
+    margin:3rem 1rem 3rem 3rem;
+}
+.abt h1{
+    display:inline;
+    font-size:2rem;
+}
+.abt p{
+    font-size:1.1rem;
+    line-height:1.8rem;
+}
+#abtname{
+    color:#2e7bda;
+}
+.abtimg{
+    width:45%;
+}
+.abtimg img{
+    margin:2rem 2rem;
 }
 .footer{
     text-align:center;
     padding:0.5rem;
+    transform:translateY(-0.25rem);
 }
 .ficons a{
     text-decoration: none;

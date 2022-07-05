@@ -21,13 +21,13 @@
                 <a href="index.html"><img src="images/logo.png" height="150rem" width="200rem">
             </div>
             <div class="menu">
-                <div class="menuop logohouse">
+                <div class="menuop menuhome">
                     <i class="tail-icon-style fa-solid fa-house"></i>
-                    <p><a href="#">Home</a></p>
+                    <p><a href="index.html">Home</a></p>
                 </div>
                 <div class="menuop">
                     <i class="tail-icon-style fa-solid fa-circle-user"></i>
-                    <p><a href="https://github.com/Sheikh-Tafsir">About</a></p>
+                    <p><a href="about.html">About</a></p>
                 </div>
                 <div class="menuop">
                     <i class="tail-icon-style fa-solid fa-briefcase"></i>
@@ -44,15 +44,23 @@
             </div>
         </div>
         <div class="back">
-            <div class="desc">
-                <h1>DREAM MORE REALISTIC</h1>
-                <h2>MAKE YOUR RESUME SUPERIOR</h2>
-                <p>HI, I am Tafsir Md Rubaiyat Rahman a Web developer and Engineering <br>
-                    student. I am looking forward to working with you to enhance my <br>
-                    skills and gain more experience and knowledge in this field.<br>
-                    skills and gain more experience and knowledge in this field adda.</p>
-                <button>More Info</button>
+            <div class="banner">
+                <div class="desc">
+                    <h1>DREAM MORE REALISTIC</h1>
+                    <h2>MAKE YOUR RESUME SUPERIOR</h2>
+                    <p>HI, I am Tafsir Md Rubaiyat Rahman a Web developer and Engineering <br>
+                        student. I am looking forward to working with you to enhance my <br>
+                        skills and gain more experience and knowledge in this field.<br>
+                        Hope I will join you soon. </p>
+                    <button>More Info</button>
+                </div>
+                <div class="homeimg">
+                    <div class="hmimg">
+                        <img src="images/cv.JPG" height="380rem" width="260rem ">
+                    </div>
+                </div>
             </div>
+            
             <div class="footer">
                 <div class="ficons">
                     <a href="https://www.facebook.com/tmr.rahman" target="_blank" class="icon-style fab fa-facebook-f"></a>
@@ -66,8 +74,18 @@
             
         </div>
     </div>
-    
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".hmimg"), {
+            max: 25,
+            speed: 400
+            /*glare:true,
+            "max-glare":1*/
+	    });
+	
+	    //It also supports NodeList
+	    VanillaTilt.init(document.querySelectorAll(".hmimg"));
+    </script>
 </body>
 </html>
 
