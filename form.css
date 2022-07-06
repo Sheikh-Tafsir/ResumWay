@@ -94,7 +94,7 @@ body{
         margin:0 8%;
     }
 }
-.menuhome{
+.menusrvc{
     background-color:#2e7bda;
     margin:0 1rem;
     border-radius:0.4rem;
@@ -135,12 +135,25 @@ body{
     .desc{
         margin:4rem 2rem;
         color:white;
-        display:flex;
         box-shadow: 0 15px 45px rgba(0,0,0,0.1);
         background: rgba(255,255,255,0.1);
         backdrop-filter:blur(1rem);
         border-radius:1rem;
-        height:28.5rem;
+        height:101rem;
+    }
+    .formbar{
+        width:92%;
+        margin:auto;
+        margin-top:2.2rem;
+    }
+    #subbut{
+        background-color: #2765b0;
+        border:none;
+        color:white;
+        font-size:1.05rem;
+        padding:0.4rem;
+        width:5rem;
+        margin:0 27rem;
     }
 }
 @media screen and (max-width: 991px) {
@@ -194,8 +207,28 @@ body{
         background: rgba(255,255,255,0.1);
         backdrop-filter:blur(1rem);
         border-radius:1rem;
-        height:45rem;
+        height:107rem;
     }
+    .formbar{
+        width:90%;
+        margin:auto;
+        margin-top:1.5rem;
+    }
+    #subbut{
+        background-color: #2765b0;
+        border:none;
+        color:white;
+        font-size:1rem;
+        padding:0.3rem;
+        width:5rem;
+        margin:0 7rem;
+    }
+}
+#subbut:hover{
+    background-color: #2e7bda;
+}
+#subbut:active{
+    transform: scale(1.1);
 }
 .footer{
     text-align:center;
