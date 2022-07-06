@@ -153,9 +153,21 @@ function inp(){
     let vdeswork3=localStorage.getItem("vdeswork3");
     document.getElementById("ddeswork3").innerHTML=vdeswork3;
 
-    
-
 }
+
+function settmax(){
+    var myVar=document.querySelector(".sidebar");
+    myVar.classList.add("sidebarv");
+    document.querySelector(".xmark").style.visibility = "visible";
+    document.querySelector(".bars").style.visibility = "hidden";
+}
+function settmin(){
+    var myVar=document.querySelector(".sidebar");
+    myVar.classList.remove("sidebarv");
+    document.querySelector(".xmark").style.visibility = "hidden";
+    document.querySelector(".bars").style.visibility = "visible";
+}
+
 function downld(){
     document.querySelector("#proImg").remove();
     const element = document.querySelector(".back");

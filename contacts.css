@@ -1,5 +1,5 @@
 *{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body{
     background-color: #252525;
@@ -11,17 +11,52 @@ body{
 .canvas{
     display:flex;
 }
-.sidebar{
-    background-color:#333333;
-    width:17%;
+@media screen and (min-width: 992px) {
+    .sidebar{
+        background-color:#333333;
+        width:17%;
+        position:fixed;
+    }
+    .headlogo{
+        padding: 1rem 1.5rem 6rem 1.5rem;
+    }
+    .menu{
+        text-align:center;
+        font-size:1.1rem;
+        padding: 0rem 0rem 14.5rem 0rem;
+    }
 }
-.headlogo{
-    padding: 1rem 1.5rem 6rem 1.5rem;
-}
-.menu{
-    text-align:center;
-    font-size:1.1rem;
-    padding: 0rem 0rem 14.5rem 0rem;
+@media screen and (max-width: 991px) {
+    .sidebar{
+        background-color:#333333;
+        width:30%;
+        position:fixed;
+        transition: transform 0.2s linear;
+        transform: translateX(-15rem);
+        z-index:9999;
+    }
+    .sidebarv{
+        background-color:#333333;
+        width:40%;
+        position:fixed;
+        transition: transform 0.2s linear;
+        transform: translateX(0rem);
+        z-index:9999;
+        height:49.5rem;
+    }
+    .headlogo{
+        padding: 1rem 1.5rem 6rem 1.5rem;
+    }
+    .headlogo img{
+        height:5rem;
+        width:10rem;
+        transform: translate(-1.5rem,2rem);
+    }
+    .menu{
+        text-align:center;
+        font-size:0.8rem;
+        padding: 0rem 0rem 14.5rem 0rem;
+    }
 }
 .menuop{
     padding:0.6rem 1.5rem;
@@ -32,26 +67,37 @@ body{
     background-color: #aaa;
     /*background-color:#2e7bda;*/
     margin:0 1rem;
-    border-radius:5%;
+    border-radius:0.4rem;
 }
 .menuop:active {
     background-color: #2e7bda;
 }
-.menuop:after{
-    background-color: grey;
-    height:0.03rem;
-    width: 9rem;
-    content:"";
-    position:absolute;
-    display:block;
-    margin:0 12%;
+@media screen and (min-width: 992px) {
+    .menuop:after{
+        background-color: grey;
+        height:0.03rem;
+        width: 9rem;
+        content:"";
+        position:absolute;
+        display:block;
+        margin:0 12%;
+    }
 }
-.menucont{
-    /*background-color: #2e7bda;
-    height:0.1rem;*/
+@media screen and (max-width: 991px) {
+    .menuop:after{
+        background-color: grey;
+        height:0.03rem;
+        width: 6rem;
+        content:"";
+        position:absolute;
+        display:block;
+        margin:0 8%;
+    }
+}
+.menuhome{
     background-color:#2e7bda;
     margin:0 1rem;
-    border-radius:5%;
+    border-radius:0.4rem;
 }
 .menu i{
     color:white;
@@ -64,43 +110,124 @@ body{
     text-decoration: none;
     color:white;
 }
-.back{
-    width:83%;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+@media screen and (min-width: 992px) {
+    .back{
+        width:83%;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        position:relative;
+        left:16.2rem;
+    }
+    .centlogo{
+        display:flex;
+        height:0;
+    }
+    .descbar{
+        background: linear-gradient(0deg, #252525 50%, #0061a7 50%);
+        margin:4rem 2rem 1rem 2rem;
+    }
+    #descbarh1{
+        margin:0;
+        transform:translateY(2rem);
+        color:white;
+        text-align:center;
+        font-size:2.5rem;
+    }
+    .desc{
+        margin:4rem 2rem;
+        color:white;
+        display:flex;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        background: rgba(255,255,255,0.1);
+        backdrop-filter:blur(1rem);
+        border-radius:1rem;
+        height:28.5rem;
+        border-top:0.08rem solid white;
+        border-left:0.08rem solid white;
+    }
+    .conts{
+        margin:5rem 2rem;
+        width:50%;
+    }
+    .cont{
+        padding:0 5rem;
+    }
+    .contparts{
+        display:flex;
+    }
+    .contpairs{
+        margin:0 1rem ;
+    }
 }
-.descbar{
-    background: linear-gradient(0deg, #252525 50%, #0061a7 50%);
-    margin:4rem 2rem 2rem 2rem;
+@media screen and (max-width: 991px) {
+    .back{
+        width:100%;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        position:relative;
+    }
+    .centlogo{
+        display:flex;
+        width:100%;
+        display:flex;
+        visibility: visible;
+    }
+    .centlogo img{
+        margin:2rem 2rem 2rem 7rem;
+    }
+    .vers{
+        font-size:1.5rem;
+        margin: 4rem 1rem 1rem 1rem;
+    }
+    .bars{
+        color:grey;
+    }
+    .bars:hover{
+        color:white;
+    }
+    .xmark{
+        color:grey;
+        transform: translate(160%,0%);
+        visibility: hidden;
+    }
+    .xmark:hover{
+        color:white;
+    }
+    .descbar{
+        background: linear-gradient(0deg, #252525 50%, #0061a7 50%);
+        margin:2rem 0.7rem;
+    }
+    #descbarh1{
+        margin:0;
+        transform:translateY(2rem);
+        color:white;
+        text-align:center;
+        font-size:2rem;
+    }
+    .desc{
+        margin:3rem 0.7rem 1rem 0.7rem;
+        color:white;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        background: rgba(255,255,255,0.1);
+        backdrop-filter:blur(1rem);
+        border-radius:1rem;
+        height:46rem;
+        border-top:0.08rem solid white;
+        border-left:0.08rem solid white;
+    }
+    .conts{
+        margin:1rem 0rem 2rem 0;
+        width:100%;
+    }
+    .cont{
+        margin:0 1.5rem;
+    }
+    .contparts{
+        display:flex;
+    }
+    .contpairs{
+        margin:0 1rem ;
+    }
 }
-#descbarh1{
-    margin:0;
-    transform:translateY(2rem);
-    color:white;
-    text-align:center;
-    font-size:2.5rem;
-}
-.desc{
-    margin:4rem 2rem;
-    color:white;
-    display:flex;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-    background: rgba(255,255,255,0.1);
-    backdrop-filter:blur(1rem);
-    border-radius:1rem;
-}
-.conts{
-    margin:5rem 2rem;
-    width:50%;
-}
-.cont{
-    padding:0 5rem;
-}
-.contparts{
-    display:flex;
-}
-.contpairs{
-    margin:0 1rem ;
-}
+
 .contparts i{
     height:1.5rem;
     width:1.5rem;
@@ -122,43 +249,84 @@ body{
     font-size: 0.9rem;
     color: white;
 }
-.mailbar{
-    width:50%;
-    color:white;
+@media screen and (min-width: 992px) {
+    .mailbar{
+        width:50%;
+        color:white;
+    }
+    .con-form{
+        background-color: white;
+        padding:2rem 4rem;
+        display:flex;
+        flex-direction:column;
+        max-width:60%;
+        border-radius:1%;
+        margin:5% 15%;
+        font-family: 'Poppins', sans-serif;
+    }
+    .con-form h1{
+        margin: 1.3rem 1rem 1rem 1rem;
+        color:black;
+        font-size: 1.5rem;; 
+    }
+    .con-form input{
+        border: 0;
+        margin:0.5rem;
+        padding:0.8rem 0.5rem;
+        border-bottom: 0.1rem solid #aaa;
+        outline:none;
+        border-radius:5%;
+    }
+    .con-form textarea{
+        border: 0;
+        margin:0.5rem;
+        padding:1.3rem 0.5rem;
+        border-bottom: 0.1rem solid #aaa;
+        outline:none;
+        border-radius:5%;
+        margin-bottom:1rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .mailbar{
+        width:95%;
+        color:white;
+    }
+    .con-form{
+        background-color: white;
+        padding:1rem 2rem 1.5rem 2rem;
+        display:flex;
+        flex-direction:column;
+        border-radius:1%;
+        margin: 1rem 0.5rem 0 1.5rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    .con-form h1{
+        color:black;
+        font-size: 1.5rem;
+        padding:0 0.5rem;
 
+    }
+    .con-form input{
+        border: 0;
+        margin:0.3rem;
+        padding:0.8rem 0.5rem;
+        border-bottom: 0.1rem solid #aaa;
+        outline:none;
+        border-radius:5%;
+    }
+    .con-form textarea{
+        border: 0;
+        margin:0.4rem;
+        padding:1.3rem 0.5rem;
+        border-bottom: 0.1rem solid #aaa;
+        outline:none;
+        border-radius:5%;
+        margin-bottom:1rem;
+    }
 }
-.con-form{
-    background-color: white;
-    padding:2rem 4rem;
-    display:flex;
-    flex-direction:column;
-    max-width:60%;
-    border-radius:1%;
-    margin:5% 15%;
-    font-family: 'Poppins', sans-serif;
-}
-.con-form h1{
-    margin: 1.3rem 1rem 1rem 1rem;
-    color:black;
-    font-size: 1.5rem;; 
-}
-.con-form input{
-    border: 0;
-    margin:0.5rem;
-    padding:0.8rem 0.5rem;
-    border-bottom: 0.1rem solid #aaa;
-    outline:none;
-    border-radius:5%;
-}
-.con-form textarea{
-    border: 0;
-    margin:0.5rem;
-    padding:1.3rem 0.5rem;
-    border-bottom: 0.1rem solid #aaa;
-    outline:none;
-    border-radius:5%;
-    margin-bottom:1rem;
-}
+
+
 .con-form button{
     background-color: #2765b0;
     padding: 8px 10px;
