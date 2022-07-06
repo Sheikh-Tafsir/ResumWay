@@ -144,64 +144,6 @@ body{
         height:28.5rem;
         height:86rem;
     }
-    .frm{
-        padding: 3rem 4rem;
-    }
-    .frm input{
-        background-color: transparent;
-        outline:none;
-        border:none;
-        border-bottom:0.1rem solid #aaa;
-        color:white;
-        font-size:1.2rem;
-    }
-    .desc p{
-        font-size:1.3rem;
-        line-height: 4rem;
-        display:inline;
-    }
-    #nname{
-        width:40rem;
-    }
-    #nprof{
-        margin: 0 10rem 0 1rem;
-    }
-    #nimage{
-        margin: 0 0rem 0 2rem;
-    }
-    #nphone{
-        margin: 0 10rem 0 1.3rem;
-    }
-    #nmail{
-        margin: 0 0 0 4rem;
-    }
-    #ngith{
-        margin: 0 10.2rem 0 3rem;
-    }
-    #nwebp{
-        margin: 0 0 0 0.8rem;
-    }
-    #nabt{
-        width:50rem;
-        margin:0 3.2rem;
-    }
-    #subbut{
-        background-color: #2765b0;
-        color:white;
-        height:2.2rem;
-        width:7rem;
-        font-size:1.1rem;
-        padding:0.2rem;
-        border:0.01rem solid black;
-        transition: all .2s ease-in-out;
-        margin:2rem 28rem;
-    }
-    #subbut:hover{
-        background-color: #2e7bda;
-    }
-    #subbut:active{
-        transform: scale(1.1);
-    }
 }
 @media screen and (max-width: 991px) {
     .back{
@@ -257,36 +199,7 @@ body{
         height:46rem;
         height:112rem;
     }
-    .form{
-
-    }
-    .frm{
-        padding: 0 2rem;
-    }
-    .desc p{
-        font-size:1.rem;
-        line-height: 1.4;
-    }
-    #subbut{
-        background-color: #2765b0;
-        color:white;
-        height:2rem;
-        width:6rem;
-        font-size:0.9rem;
-        padding:0.15rem;
-        border:0.01rem solid black;
-        transition: all .2s ease-in-out;
-        margin:0rem 5rem;
-    }
-    #subbut:hover{
-        background-color: #2e7bda;
-    }
-    #subbut:active{
-        transform: scale(1.1);
-    }
 }
-
-
 .footer{
     text-align:center;
     padding:0.5rem;
