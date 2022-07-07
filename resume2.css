@@ -179,7 +179,7 @@ body{
     }
     .descbar{
         background: linear-gradient(0deg, #252525 50%, #0061a7 50%);
-        margin:2rem 0.7rem;
+        margin:2rem 0.2rem;
     }
     #descbarh1{
         margin:0;
@@ -189,7 +189,7 @@ body{
         font-size:2rem;
     }
     .desc{
-        margin:3rem 0.7rem 1rem 0.7rem;
+        margin:3rem 0.3rem 1rem 0.3rem;
         color:white;
         box-shadow: 0 15px 45px rgba(0,0,0,0.1);
         background: rgba(255,255,255,0.1);
@@ -429,10 +429,140 @@ body{
         position:relative;
         left:-1rem;
         top:-0.7rem;
+    }   
+}
+
+@media screen and (max-width: 991px) {
+    /*-------------------------------------cv----------------------------------*/
+    .backk{
+        display:flex;
+        width:34rem;
+        margin: auto;
+        position:relative;
+        top:1rem;
     }
     
-}
-@media screen and (max-width: 991px) {
+    /*--------------------------------left side---------------------------------*/
+    .ylw-blk{
+        height:30rem;
+        width:45%;
+    }
+    .ylww{
+        background-color: rgb(244,214,68);
+        height:12%;
+    }
+    .ylww img{
+        z-index:-1;
+        height:9rem;
+        width:9rem;
+    }
+    .cont h1{
+        font-size:0.7rem;
+    }
+    .cont i{
+        height:1rem;
+        line-height: 1rem;
+        width:0.8rem;
+        color: rgb(41,45,45);
+        background-color: rgb(244,214,68);
+        border-left: 0.2rem solid rgb(244,214,68);
+        border-radius: 50%;
+        margin:0.15rem 0;
+        font-size:0.6rem;
+    }
+    .cont p{
+        font-size: 0.5rem;
+        display:inline;
+        color: white;
+        padding: 0 0rem;
+    }
+    .cont a{
+        text-decoration: none;
+        color:white;
+    }
+    .per-skil h1{
+        font-size: 0.7rem;
+    }
+    .per-skil li{
+        position:relative;
+        font-size:0.5rem;
+        padding: 0.1rem 0;
+        left:-0.7rem;
+    }
+    .langu h1{
+        font-size: 0.7rem;
+    }
+    .langu p{
+        font-size:0.7rem;
+    }
+
+    /*-------------------------------right side---------------------------*/
+    #fname{
+        text-transform: capitalize;
+        font-size:1.4rem;
+        font-weight: 900;
+    }
+    #fname h1{
+        font-size:1.4rem;
+        font-weight:normal;
+        margin-top:0;
+        margin-bottom:0.2rem;
+    }
+    #dprof{
+        padding:0 1.2rem;
+        margin-top:0;
+    }
+    #dprof p{
+        font-size:0.5rem;
+        font-weight:600;
+    }
+    #abt{
+        /*position:relative;
+        top:-0.5rem;*/
+        padding:0rem 1.2rem;
+    }
+    #abt h1{
+        font-size:0.7rem;
+    }
+    #abt p{
+        font-size:0.5rem;
+        color:rgb(85, 83, 83);
+    }
+    .educ h1{
+        padding-top:0.7rem;
+        font-size:0.8rem;
+    }
+    .educ h2{
+        font-size:0.6rem;
+    
+    }
+    .educ ul{
+        margin:0;
+    }
+    .educ li{
+        margin-top:0;
+        font-size:0.5rem;
+        position:relative;
+        left:-1rem;
+        top:-0.7rem;
+    }
+    .proj h1{
+        font-size:0.7rem;
+    }
+    .proj h2{
+        margin-top:0.4rem;
+        font-size:0.6rem;
+    }
+    .proj ul{
+        margin:0;
+    }
+    .proj li{
+        margin-top:0;
+        font-size:0.5rem;
+        position:relative;
+        left:-1rem;
+        top:-0.7rem;
+    }
 }
 .footer{
     text-align:center;
