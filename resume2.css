@@ -254,7 +254,7 @@ body{
         width:45%;
     }
     .ylww{
-            background-color: rgb(244,214,68);
+            background-color: #ddcbc0;
             height:12%;
     }
     .ylww img{
@@ -276,8 +276,8 @@ body{
         line-height: 1.7rem;
         width:1.35rem;
         color: rgb(41,45,45);
-        background-color: rgb(244,214,68);
-        border-left: 0.35rem solid rgb(244,214,68);
+        background-color: #ddcbc0;
+        border-left: 0.35rem solid #ddcbc0;
         border-radius: 50%;
         margin:0.2rem 0;
     }
@@ -317,7 +317,7 @@ body{
         position:relative;
         height:0.3rem;
         width:5.5rem;
-        background-color:rgb(244,214,68);
+        background-color:#ddcbc0;
         left:1.4rem;
         top:1.3rem;
         border-radius:20%;
@@ -339,7 +339,7 @@ body{
         position:relative;
         height:0.3rem;
         width:6rem;
-        background-color:rgb(244,214,68);
+        background-color:#ddcbc0;
         left:1.5rem;
         top:1.3rem;
         border-radius:20%;
@@ -360,7 +360,7 @@ body{
         position:relative;
         height:0.3rem;
         width:5rem;
-        background-color:rgb(244,214,68);
+        background-color:#ddcbc0;
         left:2.3rem;
         top:1.3rem;
         border-radius:20%;
@@ -389,7 +389,7 @@ body{
         color:black;
     }
     .ylw{
-        background-color:rgb(244,214,68);
+        background-color:#ddcbc0;
         height:43%;
        
     }
@@ -488,7 +488,7 @@ body{
         width:45%;
     }
     .ylww{
-        background-color: rgb(244,214,68);
+        background-color: #ddcbc0;
         height:12%;
     }
     .ylww img{
@@ -497,7 +497,7 @@ body{
         width:9rem;
     }
     .blk{
-        background-color: rgb(41,45,45);
+        background-color: #372b23;
         height:88%;
         color:white;
     }
@@ -512,8 +512,8 @@ body{
         line-height: 1.2rem;
         width:1rem;
         color: rgb(41,45,45);
-        background-color: rgb(244,214,68);
-        border-left: 0.3rem solid rgb(244,214,68);
+        background-color: #ddcbc0;
+        border-left: 0.3rem solid #ddcbc0;
         border-radius: 50%;
         margin:0.15rem 0;
         font-size:0.7rem;
@@ -544,9 +544,75 @@ body{
     }
     .langu p{
         font-size:0.7rem;
-        margin:0.5rem 1rem;
+        margin:0.7rem 0.5rem;
     }
-
+    .bar1{
+        /*background-color: pink;*/
+        display:flex;
+        margin:-15px 1rem;
+    }
+    .ybar1{
+        position:relative;
+        height:0.3rem;
+        width:4rem;
+        background-color:#ddcbc0;
+        left:0.5rem;
+        top:1rem;
+        border-radius:20%;
+    
+    }
+    .wbar1{
+        position:relative;
+        height:0.2rem;
+        width:1rem;
+        background-color:white;
+        left:0.5rem;
+        top:1.05rem;
+    }
+    .bar2{
+        /*background-color: grey;*/
+        display:flex;
+        margin:-15px 1rem;
+    }
+    .ybar2{
+        position:relative;
+        height:0.3rem;
+        width:5rem;
+        background-color:#ddcbc0;
+        left:0.6rem;
+        top:1rem;
+        border-radius:20%;
+    }
+    .wbar2{
+        position:relative;
+        height:0.2rem;
+        width:1rem;
+        background-color:white;
+        left:0.5rem;
+        top:1.05rem;
+    }
+    .bar3{
+        display:flex;
+        margin:-15px 1rem;
+    }
+    .ybar3{
+        position:relative;
+        height:0.3rem;
+        width:3.5rem;
+        background-color:#ddcbc0;
+        left:1.2rem;
+        top:1rem;
+        border-radius:20%;
+    
+    }
+    .wbar3{
+        position:relative;
+        height:0.2rem;
+        width:1.5rem;
+        background-color:white;
+        left:1.2rem;
+        top:1.05rem;
+    }
     /*-------------------------------right side---------------------------*/
     .ylw-wht{
         height:35rem;
@@ -557,7 +623,7 @@ body{
         color:black;
     }
     .ylw{
-        background-color:rgb(244,214,68);
+        background-color:#ddcbc0;
         height:39%;
        
     }
