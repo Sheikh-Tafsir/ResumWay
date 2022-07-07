@@ -170,8 +170,7 @@ function settmin(){
 
 function downld(){
     document.querySelector("#proImg").remove();
-    const element = document.querySelector(".back");
-
+    const element = document.querySelector(".backk");
     var opt = {
         margin:       0,
         filename:     'myfile.pdf',
