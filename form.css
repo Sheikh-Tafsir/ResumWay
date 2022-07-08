@@ -139,12 +139,24 @@ body{
         background: rgba(255,255,255,0.1);
         backdrop-filter:blur(1rem);
         border-radius:1rem;
-        height:101rem;
+        height:108rem;
     }
     .formbar{
         width:92%;
         margin:auto;
         margin-top:2.2rem;
+    }
+    .formbar input{
+        background-color: transparent;
+        border:none;
+        border-bottom: 0.05rem solid #aaa;
+        outline:none;
+        border-radius:5%;
+        color:white;
+        font-size: 1.1rem;
+    }
+    .formbar p{
+        font-size:1.1rem;
     }
     #subbut{
         background-color: #2765b0;
@@ -207,12 +219,21 @@ body{
         background: rgba(255,255,255,0.1);
         backdrop-filter:blur(1rem);
         border-radius:1rem;
-        height:107rem;
+        height:109rem;
     }
     .formbar{
         width:90%;
         margin:auto;
         margin-top:1.5rem;
+    }
+    .formbar input{
+        background-color: transparent;
+        border:none;
+        border-bottom: 0.05rem solid #aaa;
+        outline:none;
+        border-radius:5%;
+        color:white;
+        font-size: 1.1rem;
     }
     #subbut{
         background-color: #2765b0;

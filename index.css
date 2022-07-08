@@ -130,14 +130,14 @@ body{
     }
     .desc{
         color:white;
-        padding: 2rem 3rem 8rem 3rem;
+        padding: 3rem 3rem 8rem 3rem;
         width:60%;
     }
     .centlogo{
         visibility: hidden;
     }
     .desc h1{
-        font-size:3.2rem;
+        font-size:3.4rem;
     }
     .desc h2{
         font-size:2.4rem;
