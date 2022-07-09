@@ -261,7 +261,7 @@ body{
         z-index:-1;
     }
     .blk{
-        background-color: rgb(41,45,45);
+        background-color:  #3d2923;
         height:88%;
         color:white;
     }
@@ -497,7 +497,7 @@ body{
         width:9rem;
     }
     .blk{
-        background-color: #372b23;
+        background-color:  #3d2923;
         height:88%;
         color:white;
     }
