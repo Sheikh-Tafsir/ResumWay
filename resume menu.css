@@ -17,7 +17,7 @@ body{
         position:fixed;
     }
     .headlogo{
-        padding: 1rem 1.5rem 6rem 1.5rem;
+        padding: 1rem 1.5rem 3.5rem 1.5rem;
     }
     .menu{
         text-align:center;
@@ -58,15 +58,18 @@ body{
     }
 }
 .menuop{
-    padding:0.5rem 1.5rem;
+    padding:0.6rem 1.5rem;
+    margin-top:0.2rem;
+    margin-bottom:0.2rem;
     position:relative;
     line-height: 2.4;
 }
 .menuop:hover {
     background-color: #aaa;
     /*background-color:#2e7bda;*/
-    margin:0 1rem;
-    border-radius:5%;
+    margin-right:0.5rem;
+    margin-left:0.5rem;
+    border-radius:0.4rem;
 }
 .menuop:active {
     background-color: #2e7bda;
@@ -90,7 +93,7 @@ body{
         content:"";
         position:absolute;
         display:block;
-        margin:0 8%;
+        margin:0 3%;
     }
 }
 .mensrvc{
@@ -286,6 +289,7 @@ body{
     }
     .templatebox button:hover{
         background-color: #aaa;
+        box-shadow: 0 2px 45px #aaa;
     }
     .templatebox button:active{
         background-color: #0061a7;
