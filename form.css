@@ -248,6 +248,15 @@ body{
         margin:0 7rem;
     }
 }
+#nname{
+    width:50%;
+}
+#nimage{
+    width:50%;
+}
+#nabt{
+    width:75%;
+}
 #subbut:hover{
     background-color: #2e7bda;
 }

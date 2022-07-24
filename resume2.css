@@ -101,7 +101,7 @@ body{
     background-color:#2e7bda;
     margin:0 1rem;
     border-radius:0.4rem;
-    transform: translateX(1rem);
+    transform: translateX(0.5rem);
 }
 .menu i{
     color:white;
@@ -116,7 +116,7 @@ body{
 }
 @media screen and (min-width: 992px) {
     .back{
-        width:83%;
+        width:82.9%;
         box-shadow: 0 15px 45px rgba(0,0,0,0.1);
         position:relative;
         left:16.2rem;

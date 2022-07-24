@@ -169,7 +169,7 @@ function settmin(){
 }
 
 function downld(){
-    document.querySelector("#proImg").remove();
+    /*document.querySelector("#proImg").remove();
     const element = document.querySelector(".backk");
     var opt = {
         margin:       0,
@@ -182,5 +182,16 @@ function downld(){
     html2pdf()
     .set(opt)
     .from(element)
-    .save();
+    .save();*/
+
+    var container = document.querySelector(".backk");
+    html2canvas(document.querySelector(".backk"),{ logging: true, letterRendering: 1, allowTaint: false, useCORS: true }).then(function (canvas) {
+
+        var link = document.createElement("a");
+        document.body.appendChild(link);
+        link.download = "html_image.jpg";
+        link.href = canvas.toDataURL();
+        link.target = '_blank';
+        link.click();
+    });
 }
